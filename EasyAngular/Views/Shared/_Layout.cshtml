@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>@ViewData["Title"] - EasyAngular</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700">
+  <!-- CSS Global Compulsory -->
+  <link rel="stylesheet" href="~/assets/vendor/bootstrap/bootstrap.min.css">
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="~/assets/vendor/icon-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="~/assets/vendor/icon-line-pro/style.css">
+  <link rel="stylesheet" href="~/assets/vendor/icon-hs/style.css">
+  <link rel="stylesheet" href="~/assets/vendor/animate.css">
+  <link rel="stylesheet" href="~/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="~/assets/vendor/hamburgers/hamburgers.min.css">
+  <!-- CSS Unify -->
+  <link rel="stylesheet" href="~/assets/css/unify.css">
+
+  <environment include="Development">
+    <link rel="stylesheet" href="~/css/site.css" />
+  </environment>
+  <environment exclude="Development">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+  </environment>
+</head>
+<body>
+  <main>
+    <!-- Header -->
+    <header id="js-header" class="u-header u-header--static">
+      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+        <nav class="js-mega-menu navbar navbar-toggleable-md">
+          <div class="container">
+            <!-- Responsive Toggle Button -->
+            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span class="hamburger hamburger--slider">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+            <!-- Logo -->
+            <a href="../../index.html" class="navbar-brand">
+              <img src="../../assets/img/logo/logo-1.png" alt="Image Description">
+            </a>
+            <!-- End Logo -->
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+              <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                <!-- Intro -->
+                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                  <a href="../../index.html" class="nav-link g-py-7 g-px-0">Intro</a>
+                </li>
+                <!-- End Intro -->
+              </ul>
+            </div>
+            <!-- End Navigation -->
+
+            <div class="d-inline-block hidden-xs-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+              <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697" target="_blank">Purchase now</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Breadcrumbs -->
+    <section class="g-bg-gray-light-v5 g-py-80">
+      <div class="container text-center">
+        <h2 class="h2 g-color-black g-font-weight-600">Blog grid overlap right sidebar</h2>
+        <ul class="u-list-inline">
+          <li class="list-inline-item g-mr-5">
+            <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#">Home</a>
+            <i class="g-color-gray-light-v2 g-ml-5">/</i>
+          </li>
+          <li class="list-inline-item g-mr-5">
+            <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#">Blog</a>
+            <i class="g-color-gray-light-v2 g-ml-5">/</i>
+          </li>
+          <li class="list-inline-item g-color-primary">
+            <span>Blog grid overlap right sidebar</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+    @RenderBody()
+
+
+    <!-- Copyright Footer -->
+    <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+            <div class="d-lg-flex">
+              <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved.</small>
+              <ul class="u-list-inline">
+                <li class="list-inline-item">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">
+                  <span>|</span>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Terms of Use</a>
+                </li>
+                <li class="list-inline-item">
+                  <span>|</span>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">License</a>
+                </li>
+                <li class="list-inline-item">
+                  <span>|</span>
+                </li>
+                <li class="list-inline-item">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 align-self-center">
+            <ul class="list-inline text-center text-md-right mb-0">
+              <li class="list-inline-item g-mx-10" title="Facebook"
+                  data-toggle="tooltip"
+                  data-placement="top">
+                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" title="Skype"
+                  data-toggle="tooltip"
+                  data-placement="top">
+                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-skype"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" title="Linkedin"
+                  data-toggle="tooltip"
+                  data-placement="top">
+                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" title="Pinterest"
+                  data-toggle="tooltip"
+                  data-placement="top">
+                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-pinterest"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" title="Twitter"
+                  data-toggle="tooltip"
+                  data-placement="top">
+                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" title="Dribbble"
+                  data-toggle="tooltip"
+                  data-placement="top">
+                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Copyright Footer -->
+    <a class="js-go-to u-go-to-v1" href="#"
+       data-type="fixed"
+       data-position='{
+           "bottom": 15,
+           "right": 15
+         }'
+       data-offset-top="400"
+       data-compensation="#js-header"
+       data-show-effect="zoomIn">
+      <i class="hs-icon hs-icon-arrow-top"></i>
+    </a>
+  </main>
+
+
+  <environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+  </environment>
+  <environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+  </environment>
+
+  <!-- JS Global Compulsory -->
+  <script src="~/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="~/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+  <script src="~/assets/vendor/tether.min.js"></script>
+  <script src="~/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script src="~/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="~/assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="~/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <!-- JS Unify -->
+  <script src="~/assets/js/hs.core.js"></script>
+  <script src="~/assets/js/components/hs.header.js"></script>
+  <script src="~/assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="~/assets/js/components/hs.tabs.js"></script>
+  <script src="~/assets/js/components/hs.sticky-block.js"></script>
+  <script src="~/assets/js/components/hs.go-to.js"></script>
+  <!-- JS Customization -->
+  <script src="~/assets/js/custom.js"></script>
+
+  @RenderSection("Scripts", required: false)
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of tabs
+      $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of sticky blocks
+      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+    });
+
+    $(window).on('resize', function () {
+      setTimeout(function () {
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+      }, 200);
+    });
+  </script>
+</body>
+
+</html>
