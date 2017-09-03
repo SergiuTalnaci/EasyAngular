@@ -14,11 +14,9 @@ namespace EasyAngular.Controllers
         {
             return View();
         }
-
-        public IActionResult About()
+	  [Route("add-angular-to-dotnet-core")]
+        public IActionResult AddAngularToDotnetCore()
         {
-            ViewData["Message"] = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
-
             return View();
         }
 

@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>@ViewData["Title"] - EasyAngular</title>
+  @if (ViewData["Title"] != null)
+  {
+      <title>@ViewData["Title"] - Easy Angular</title>
+  }
+  else
+  {
+      <title>Easy Angular</title>
+  }
 
 
   <!-- Google Fonts -->
@@ -53,8 +60,8 @@
             </button>
             <!-- End Responsive Toggle Button -->
             <!-- Logo -->
-            <a href="../../index.html" class="navbar-brand">
-              <img src="../../assets/img/logo/logo-1.png" alt="Image Description">
+            <a asp-controller="home" asp-action="index" class="navbar-brand">
+              Easy Angular
             </a>
             <!-- End Logo -->
             <!-- Navigation -->
@@ -68,10 +75,6 @@
               </ul>
             </div>
             <!-- End Navigation -->
-
-            <div class="d-inline-block hidden-xs-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
-              <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697" target="_blank">Purchase now</a>
-            </div>
           </div>
         </nav>
       </div>
