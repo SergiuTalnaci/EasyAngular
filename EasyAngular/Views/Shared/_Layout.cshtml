@@ -39,165 +39,187 @@
   </environment>
 </head>
 <body>
-  <main>
-    <!-- Header -->
-    <header id="js-header" class="u-header u-header--static">
-      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
-        <nav class="js-mega-menu navbar navbar-toggleable-md">
-          <div class="container">
-            <!-- Responsive Toggle Button -->
-            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
-                    aria-label="Toggle navigation"
-                    aria-expanded="false"
-                    aria-controls="navBar"
-                    data-toggle="collapse"
-                    data-target="#navBar">
-              <span class="hamburger hamburger--slider">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </span>
-            </button>
-            <!-- End Responsive Toggle Button -->
-            <!-- Logo -->
-            <a asp-controller="home" asp-action="index" class="navbar-brand">
-              Easy Angular
-            </a>
-            <!-- End Logo -->
-            <!-- Navigation -->
-            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
-              <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
-                <!-- Intro -->
-                <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                  <a href="../../index.html" class="nav-link g-py-7 g-px-0">Intro</a>
-                </li>
-                <!-- End Intro -->
-              </ul>
+    <main>
+        <!-- Header -->
+        <header id="js-header" class="u-header u-header--static">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-toggleable-md">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-right-0" type="button"
+                                aria-label="Toggle navigation"
+                                aria-expanded="false"
+                                aria-controls="navBar"
+                                data-toggle="collapse"
+                                data-target="#navBar">
+                            <span class="hamburger hamburger--slider">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+                        <!-- Logo -->
+                        <a asp-controller="home" asp-action="index" class="navbar-brand">
+                            Easy Angular
+                        </a>
+                        <!-- End Logo -->
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                            <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                                <!-- Intro -->
+                                <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                    <a href="../../index.html" class="nav-link g-py-7 g-px-0">Intro</a>
+                                </li>
+                                <!-- End Intro -->
+                            </ul>
+                        </div>
+                        <!-- End Navigation -->
+                    </div>
+                </nav>
             </div>
-            <!-- End Navigation -->
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- End Header -->
-    <!-- Breadcrumbs -->
-    <section class="g-bg-gray-light-v5 g-py-80">
-      <div class="container text-center">
-        <h2 class="h2 g-color-black g-font-weight-600">Blog grid overlap right sidebar</h2>
-        <ul class="u-list-inline">
-          <li class="list-inline-item g-mr-5">
-            <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#">Home</a>
-            <i class="g-color-gray-light-v2 g-ml-5">/</i>
-          </li>
-          <li class="list-inline-item g-mr-5">
-            <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#">Blog</a>
-            <i class="g-color-gray-light-v2 g-ml-5">/</i>
-          </li>
-          <li class="list-inline-item g-color-primary">
-            <span>Blog grid overlap right sidebar</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- End Breadcrumbs -->
-
-    @RenderBody()
-
-
-    <!-- Copyright Footer -->
-    <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
-            <div class="d-lg-flex">
-              <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved.</small>
-              <ul class="u-list-inline">
-                <li class="list-inline-item">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Privacy Policy</a>
-                </li>
-                <li class="list-inline-item">
-                  <span>|</span>
-                </li>
-                <li class="list-inline-item">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Terms of Use</a>
-                </li>
-                <li class="list-inline-item">
-                  <span>|</span>
-                </li>
-                <li class="list-inline-item">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">License</a>
-                </li>
-                <li class="list-inline-item">
-                  <span>|</span>
-                </li>
-                <li class="list-inline-item">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Support</a>
-                </li>
-              </ul>
+        </header>
+        <!-- End Header -->
+        <!-- Breadcrumbs -->
+        <section class="g-bg-gray-light-v5 g-py-80">
+            <div class="container text-center">
+                <h2 class="h2 g-color-black g-font-weight-600">Blog grid overlap right sidebar</h2>
+                <ul class="u-list-inline">
+                    <li class="list-inline-item g-mr-5">
+                        <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#">Home</a>
+                        <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                    </li>
+                    <li class="list-inline-item g-mr-5">
+                        <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" href="#">Blog</a>
+                        <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                    </li>
+                    <li class="list-inline-item g-color-primary">
+                        <span>Blog grid overlap right sidebar</span>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="col-md-4 align-self-center">
-            <ul class="list-inline text-center text-md-right mb-0">
-              <li class="list-inline-item g-mx-10" title="Facebook"
-                  data-toggle="tooltip"
-                  data-placement="top">
-                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item g-mx-10" title="Skype"
-                  data-toggle="tooltip"
-                  data-placement="top">
-                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                  <i class="fa fa-skype"></i>
-                </a>
-              </li>
-              <li class="list-inline-item g-mx-10" title="Linkedin"
-                  data-toggle="tooltip"
-                  data-placement="top">
-                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item g-mx-10" title="Pinterest"
-                  data-toggle="tooltip"
-                  data-placement="top">
-                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                  <i class="fa fa-pinterest"></i>
-                </a>
-              </li>
-              <li class="list-inline-item g-mx-10" title="Twitter"
-                  data-toggle="tooltip"
-                  data-placement="top">
-                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item g-mx-10" title="Dribbble"
-                  data-toggle="tooltip"
-                  data-placement="top">
-                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                  <i class="fa fa-dribbble"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <div class="container g-pt-100 g-pb-20">
+            <div class="row justify-content-between">
+                <div class="col-lg-9 g-mb-80">
+                    @RenderBody()
+                </div>
+                <div class="col-lg-3 g-brd-left--lg g-brd-gray-light-v4 g-mb-80">
+                    <div class="g-pl-20--lg">
+                        <!-- Links -->
+                        <div class="g-mb-50">
+                            <h3 class="h5 g-color-black g-font-weight-600 mb-4">Links</h3>
+                            <ul class="list-unstyled g-font-size-13 mb-0">
+                                <li><a class="d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8" href="#"><i class="mr-2 fa fa-angle-right"></i> People</a></li>
+                                <li><a class="d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8" href="#"><i class="mr-2 fa fa-angle-right"></i> News Publications</a></li>
+                                <li><a class="d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8" href="#"><i class="mr-2 fa fa-angle-right"></i> Marketing &amp; IT</a></li>
+                                <li><a class="d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8" href="#"><i class="mr-2 fa fa-angle-right"></i> Business Strategy</a></li>
+                                <li><a class="d-block active u-link-v5 g-color-black g-bg-gray-light-v5 g-font-weight-600 g-rounded-50 g-px-20 g-py-8" href="#"><i class="mr-2 fa fa-angle-right"></i> Untold Stories</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Links -->
+                        <hr class="g-brd-gray-light-v4 g-mt-50 mb-0">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-    <!-- End Copyright Footer -->
-    <a class="js-go-to u-go-to-v1" href="#"
-       data-type="fixed"
-       data-position='{
+
+        <!-- Copyright Footer -->
+        <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+                        <div class="d-lg-flex">
+                            <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved.</small>
+                            <ul class="u-list-inline">
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Terms of Use</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">License</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>|</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                        <ul class="list-inline text-center text-md-right mb-0">
+                            <li class="list-inline-item g-mx-10" title="Facebook"
+                                data-toggle="tooltip"
+                                data-placement="top">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" title="Skype"
+                                data-toggle="tooltip"
+                                data-placement="top">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" title="Linkedin"
+                                data-toggle="tooltip"
+                                data-placement="top">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" title="Pinterest"
+                                data-toggle="tooltip"
+                                data-placement="top">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" title="Twitter"
+                                data-toggle="tooltip"
+                                data-placement="top">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item g-mx-10" title="Dribbble"
+                                data-toggle="tooltip"
+                                data-placement="top">
+                                <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+        <a class="js-go-to u-go-to-v1" href="#"
+           data-type="fixed"
+           data-position='{
            "bottom": 15,
            "right": 15
          }'
-       data-offset-top="400"
-       data-compensation="#js-header"
-       data-show-effect="zoomIn">
-      <i class="hs-icon hs-icon-arrow-top"></i>
-    </a>
-  </main>
+           data-offset-top="400"
+           data-compensation="#js-header"
+           data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
 
 
   <environment include="Development">
